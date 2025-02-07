@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>3D Brain Model - Neuroanatomy Learning | 3D脑模型 - 神经解剖学习</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="info">
+        <button id="minimize-btn" aria-label="Toggle panel">−</button>
+        <h1>Interactive Brain Model | 交互式脑模型</h1>
+        <p>Use mouse to rotate. Scroll to zoom. | 使用鼠标旋转。滚轮缩放。</p>
+        <div id="region-info">
+            <h2>Brain Regions | 脑区</h2>
+            <select id="region-selector">
+                <option value="">Select a region... | 选择脑区...</option>
+                <option value="frontal">Frontal Lobe | 额叶</option>
+                <option value="parietal">Parietal Lobe | 顶叶</option>
+                <option value="temporal">Temporal Lobe | 颞叶</option>
+                <option value="occipital">Occipital Lobe | 枕叶</option>
+                <option value="cerebellum">Cerebellum | 小脑</option>
+                <option value="brainstem">Brainstem | 脑干</option>
+            </select>
+            <div id="region-description"></div>
+        </div>
+    </div>
+    <div id="brain-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
